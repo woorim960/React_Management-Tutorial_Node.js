@@ -169,9 +169,10 @@ class App extends Component {
                 input: classes.inputInput,
               }}
               inputProps={{ 'aria-label': 'search' }}
+              name="searchKeyword"
+              value={this.state.searchKeyword}
+              onChange={this.handleValueChange}
             />
-            name="searchKeyword"
-            value={this.state.searchKeyword}
           </div>
         </Toolbar>
         </AppBar>
